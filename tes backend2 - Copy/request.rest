@@ -1,0 +1,46 @@
+GET http://localhost:1000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsIm5hbWUiOiJhYXJvbiIsImVtYWlsIjoiZW1haWxAZ3NlZGcuY29tIiwiaWF0IjoxNzE3NDk0Mjg3LCJleHAiOjE3MTc0OTQzMDd9.NJgZ1iJV7c_PCPHo8ru9nr3-jAof_M40bzKc2GPVGgY
+
+###
+POST  http://localhost:1000/users
+Content-Type: application/json
+
+{
+    "name": "aaron",
+    "email": "email@gsedg.com",
+    "password": "123",
+    "confPassword": "123"
+}
+
+###
+POST  http://localhost:1000/login
+Content-Type: application/json
+
+{
+    "email": "email@gsedg.com",
+    "password": "123"
+}
+
+###
+GET http://localhost:1000/token
+
+###
+DELETE  http://localhost:1000/logout
+
+
+###
+GET http://localhost:1000/users/4
+
+
+###
+GET http://localhost:1000/komen
+
+
+###
+POST  http://localhost:1000/komen
+Content-Type: application/json
+
+{
+    "namakomen": "aaron123",
+    "pendapat": "oooooooooo"
+}
